@@ -62,6 +62,19 @@ CREATE TABLE document_items (
 );
 ```
 
+### SQL dump за бърз старт
+
+В `sql/dcloud_dump.sql` има готов dump с:
+
+- Създаване на база `dcloud` и всички таблици;
+- Примерни данни: фирма с потребител `demo` / `secret`, два доставчика, три артикула и два документа с редовете им.
+
+Импорт:
+
+```bash
+mysql -u dcloud_user -p < sql/dcloud_dump.sql
+```
+
 ## Стартиране
 
 ```bash
